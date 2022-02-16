@@ -1,0 +1,14 @@
+[package]
+name = "capsulenet"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#cpal = { version = "*", features = ["jack"] }
+bevy = {version = "0.6", default-features = false}
+bevy_render = {version = "0.6.1"}
+
+[target.'cfg(target_os = "linux")'.dev-dependencies]
+bevy = { version = "0.6", default-features = false}
