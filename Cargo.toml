@@ -7,8 +7,12 @@ edition = "2021"
 
 [dependencies]
 #cpal = { version = "*", features = ["jack"] }
-bevy = {version = "0.6", default-features = false}
-bevy_render = {version = "0.6.1"}
+bevy = {version = "0.6", default-features = false, features = ["bevy_render"]}
+#bevy_render = {version = "0.6.1"}
+rand = "0.8.3"
+serde = { version = "1.0.125", features = ["derive"] }
+turbulence = "0.3"
+bevy_networking_turbulence = { version = "0.4.1", default-features = false, features = ["use-webrtc"] }
 
 [target.'cfg(target_os = "linux")'.dev-dependencies]
 bevy = { version = "0.6", default-features = false}

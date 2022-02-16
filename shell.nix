@@ -10,7 +10,7 @@ with nixpkgs;
 mkShell {
   name = "rust";
   #buildInputs = [ rustc cargo cargo-make openssl rustup lld rust-analyzer rustfmt clippy pkgconfig ];
-  buildInputs = [ cargo-make watchexec clippy rustfmt rust-analyzer openssl lld pkgconfig
+  buildInputs = [ gdb gdbgui cargo-make watchexec clippy rustfmt rust-analyzer openssl lld pkgconfig
   python39Packages.websockify
   latest.rustChannels.stable.rust
   latest.rustChannels.stable.cargo
